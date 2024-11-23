@@ -1,4 +1,4 @@
-package com.nassmateus.api_igreja;
+package com.nassmateus.apiigreja;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

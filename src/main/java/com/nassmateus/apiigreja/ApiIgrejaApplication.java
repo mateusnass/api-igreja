@@ -1,4 +1,4 @@
-package com.nassmateus.api_igreja;
+package com.nassmateus.apiigreja;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
