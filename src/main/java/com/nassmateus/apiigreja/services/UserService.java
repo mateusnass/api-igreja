@@ -1,6 +1,7 @@
 package com.nassmateus.apiigreja.services;
 
 import com.nassmateus.apiigreja.domain.User;
+import com.nassmateus.apiigreja.dto.UserDTO;
 import com.nassmateus.apiigreja.repository.UserRepository;
 import com.nassmateus.apiigreja.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,12 @@ public class UserService {
         return repo.findById(id).orElseThrow(() -> new ObjectNotFoundException("User not found with ID: " + id));
     }
 
+    public User insert(User user) {
+        return repo.insert(user);
+    }
+
+    public User fromDTO(UserDTO objDto) {
+        return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
+    }
 
 }
