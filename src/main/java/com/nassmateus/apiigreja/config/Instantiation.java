@@ -20,11 +20,11 @@ public class Instantiation implements CommandLineRunner {
 
         userRepository.deleteAll();
 
-        User maria = new User(null, "Maria Brown", "maria@gmail.com");
+        User mari = new User(null, "Mari Brown", "maria@gmail.com");
         User alex = new User(null, "Alex Green", "alex@gmail.com");
         User bob = new User(null, "Bob Grey", "bob@gmail.com");
 
-       userRepository.saveAll(Arrays.asList(maria, alex, bob));
+       userRepository.saveAll(Arrays.asList(mari, alex, bob));
 
     }
 }
